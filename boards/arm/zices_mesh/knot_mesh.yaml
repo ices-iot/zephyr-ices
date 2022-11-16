@@ -1,0 +1,22 @@
+#
+# Code based on nrf52840_pca10059.
+# Base commit: 67af71e01d3a5f86efea9eb1f7547be4f8155f31
+# Edited by ZICES contributors.
+#
+
+# Copyright (c) 2019 CESAR
+
+identifier: zices_mesh
+name: ZICES-Mesh
+type: mcu
+arch: arm
+ram: 256
+flash: 1024
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - usb_device
+  - ble
+  - ieee802154
