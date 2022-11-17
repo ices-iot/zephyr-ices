@@ -17,7 +17,7 @@ static int board_zices_mesh_init(struct device *dev)
 {
 	ARG_UNUSED(dev);
 
-	/* if the knot_mesh board is powered from USB
+	/* if the board is powered from USB
 	 * (high voltage mode), GPIO output voltage is set to 1.8 volts by
 	 * default and that is not enough to turn the green and blue LEDs on.
 	 * Increase GPIO voltage to 3.0 volts.

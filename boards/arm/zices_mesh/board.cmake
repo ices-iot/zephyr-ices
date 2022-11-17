@@ -1,10 +1,10 @@
 #
 # Code based on nrf52840_pca10059.
 # Base commit: 3ae52624ffa129dfd1b0f5dc337afd1ddd6c4c1c
-# Edited by KNoT contributors.
+# Edited by ZICES contributors.
 #
 
-# Copyright (c) 2019 CESAR
+# Copyright (c) 2022 ICES
 #
 # SPDX-License-Identifier: Apache-2.0
 
