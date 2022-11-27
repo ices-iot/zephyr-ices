@@ -11,6 +11,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-config  BOARD_KNOT_MESH
+config  BOARD_ZICES_MESH
 	bool "ZICES MESH"
 	depends on SOC_NRF52840_QIAA

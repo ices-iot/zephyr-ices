@@ -4,7 +4,7 @@
 # Edited by ZICES contributors.
 #
 
-# Kconfig - KNoT Mesh board configuration
+# Kconfig - ICES Mesh board configuration
 #
 # Copyright (c) 2022 ICES
 # Copyright (c) 2018 Nordic Semiconductor ASA
@@ -25,4 +25,4 @@ config BOARD_HAS_NRF5_BOOTLOADER
 	 If selected, applications are linked so that they can be loaded by
 	 Nordic nRF5 bootloader.
 
-endif # BOARD_KNOT_MESH
+endif # BOARD_ZICES_MESH
