@@ -81,9 +81,6 @@
 #include "ll_test.h"
 #include "ll_settings.h"
 
-#define BT_DBG_ENABLED IS_ENABLED(CONFIG_BT_DEBUG_HCI_DRIVER)
-#define LOG_MODULE_NAME bt_ctlr_ull
-#include "common/log.h"
 #include "hal/debug.h"
 
 #if defined(CONFIG_BT_BROADCASTER)
@@ -209,9 +206,10 @@
  */
 #if defined(CONFIG_BT_MAX_CONN)
 #if defined(CONFIG_BT_CENTRAL) && defined(CONFIG_BT_PERIPHERAL)
-#define BT_CTLR_MAX_CONNECTABLE 2
+#define BT_CTLR_MAX_CONNECTABLE (1U + MIN(((CONFIG_BT_MAX_CONN) - 1U), \
+					  (BT_CTLR_ADV_SET)))
 #else
-#define BT_CTLR_MAX_CONNECTABLE 1
+#define BT_CTLR_MAX_CONNECTABLE MAX(1U, (BT_CTLR_ADV_SET))
 #endif
 #define BT_CTLR_MAX_CONN        CONFIG_BT_MAX_CONN
 #else
